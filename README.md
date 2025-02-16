@@ -14,12 +14,28 @@ API REST (“Representational State Transfer”) é um estilo de arquitetura par
 
 ## Exemplos de Métodos HTTP em uma API REST
 
-| Método HTTP | Descrição |
-|-------------|------------|
-| **GET** | Obtém dados de um recurso. |
-| **POST** | Cria um novo recurso. |
-| **PUT** | Atualiza um recurso existente. |
-| **DELETE** | Remove um recurso. |
+| Método HTTP | Descrição                                   |
+| ----------- | ------------------------------------------- |
+| **GET**     | Obtém dados de um recurso.                  |
+| **POST**    | Cria um novo recurso.                       |
+| **PUT**     | Atualiza um recurso existente.              |
+| **DELETE**  | Remove um recurso.                          |
+| **PATCH**   | Atualiza parcialmente um recurso existente. |
+
+## Códigos de Status HTTP
+
+Os códigos de status HTTP ajudam a indicar o resultado de uma requisição.
+
+| Código                        | Significado                                          |
+| ----------------------------- | ---------------------------------------------------- |
+| **200 OK**                    | Requisição bem-sucedida.                             |
+| **201 Created**               | Recurso criado com sucesso.                          |
+| **204 No Content**            | Requisição processada, mas sem conteúdo de resposta. |
+| **400 Bad Request**           | Requisição malformada.                               |
+| **401 Unauthorized**          | Não autorizado.                                      |
+| **403 Forbidden**             | Acesso negado.                                       |
+| **404 Not Found**             | Recurso não encontrado.                              |
+| **500 Internal Server Error** | Erro interno do servidor.                            |
 
 ## Exemplo de Requisição REST
 
